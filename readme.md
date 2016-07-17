@@ -1,6 +1,6 @@
 # PHP assessment
 
-This was an assessment for a job, basically it is a "to do" restful API resourse with some validation and custom messages.
+This was an assessment for a job, basically it is a task manager made as a restful API resourse with some validation and custom messages.
 
 ##Instalation
 
