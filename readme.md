@@ -1,22 +1,37 @@
-# Lumen PHP Framework
+# PHP assessment
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+This was an assessment for a job, basically it is a task manager made as a restful API resourse with some validation and custom messages.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+##Instalation
 
-## Official Documentation
+First checkout the Lumen instalation requirements on https://lumen.laravel.com/docs/5.2/installation
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+Apart of that you will need a MySQL server with two databases with the following names: `todo_lumen` and  `todo_lumen_test`.
 
-## Security Vulnerabilities
+Edit the `.env` to match your environment details and credentials.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Now just run install the dependencies: `$ composer install`
 
-## License
+And you can run it with PHP built in server: `$ php -S localhost:8000 -t ./public/`
 
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
-# php-assessment
+##Endpoints
+
+**GET /tasks** This get all tasks and can be ordered by the GET parameter sort_by, it can be any of the entity attributes, prepend a + or – to change the ordering direction. (accepts only one field as of now) 
+
+**POST /tasks** Pass json data to create the tasks. Example data input:
+{
+  "type": "work",
+  "content": "hard",
+  "done": false,
+  "sort_order": 7
+}
+
+**GET** /tasks/{id} Return the task with full details.
+
+**PATCH** /tasks/{id} Pass json data to update a task, the same kind of input as on the POST /tasks.
+
+**DELETE** /tasks/{id} Deletes the task.
+
+## Tests
+
+There are some functional tests, to run them you must have the `todo_lumen_test` database. `$ phpunit` will run the tests.
