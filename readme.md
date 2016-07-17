@@ -32,6 +32,6 @@ And you can run it with PHP built in server: `$ php -S localhost:8000 -t ./publi
 
 **DELETE** /tasks/{id} Deletes the task.
 
-### Tests
+## Tests
 
 There are some functional tests, to run them you must have the `todo_lumen_test` database. `$ phpunit` will run the tests.
