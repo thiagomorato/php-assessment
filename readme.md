@@ -14,7 +14,7 @@ Now just run install the dependencies: `$ composer install`
 
 And you can run it with PHP built in server: `$ php -S localhost:8000 -t ./public/`
 
-##End Points
+##Endpoints
 
 **GET /tasks** This get all tasks and can be ordered by the GET parameter sort_by, it can be any of the entity attributes, prepend a + or – to change the ordering direction. (accepts only one field as of now) 
 
