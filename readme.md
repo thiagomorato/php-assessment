@@ -1,6 +1,6 @@
 # PHP assessment
 
-This was an assessment for a job, basically it is a task manager made as a restful API resourse with some validation and custom messages.
+It is a task manager made as a restful API resourse with some validation and custom messages. It was an accessment for a job and it was developed in a few hours so it is just a small sample of my work. Also I can't review publicly what were the assessment specifications so if you find some strange/unusual/funny log or functionality it may be due that.
 
 ##Instalation
 
