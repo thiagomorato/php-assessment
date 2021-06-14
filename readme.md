@@ -2,7 +2,7 @@
 
 It is a task manager made as a restful API resourse with some validation and custom messages. It was an accessment for a job and it was developed in a few hours so it is just a small sample of my work. Also I can't review publicly what were the assessment specifications so if you find some strange/unusual/funny log or functionality it may be due that.
 
-##Instalation
+## Instalation
 
 First checkout the Lumen instalation requirements on https://lumen.laravel.com/docs/5.2/installation
 
@@ -14,7 +14,7 @@ Now just run install the dependencies: `$ composer install`
 
 And you can run it with PHP built in server: `$ php -S localhost:8000 -t ./public/`
 
-##Endpoints
+## Endpoints
 
 **GET /tasks** This get all tasks and can be ordered by the GET parameter sort_by, it can be any of the entity attributes, prepend a + or – to change the ordering direction. (accepts only one field as of now) 
 
